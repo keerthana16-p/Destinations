@@ -1,0 +1,65 @@
+.container{ 
+    background: url(image-1.jpeg) top right no-repeat; 
+    /* filter: blur(8px); 
+    -webkit-filter: blur(8px); */ 
+    background-size: cover; 
+    position: relative; 
+    height: 100vh; 
+    width: 100%; 
+    display: grid; 
+    grid-template-columns: 100px 1fr; 
+    z-index: 20; 
+} 
+
+.container::before { 
+    content:""; 
+    background: rgba(255,255,255,0.8);   
+    position:fixed; 
+    bottom: 0; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+} 
+.heading{ 
+    margin-top: 200px; 
+    text-align: center; 
+    z-index: 100; 
+} 
+.destinations{ 
+    font-family: 'Roboto', sans-serif; 
+    display: block; 
+    margin-inline-start: 0px; 
+    margin-inline-end: 0px; 
+    /* color: #45505b;  */ 
+    color:rgb(36, 155, 202); 
+    font-size: 50px; 
+    font-weight: bold; 
+    font-style: italic; 
+} 
+.description{ 
+    text-align: center; 
+    color: black; 
+    font-size: 30px; 
+    font-style: bold; 
+    font-family: Arial, Helvetica, sans-serif; 
+    z-index: 100; 
+} 
+.navigation{ 
+    display:block; 
+    cursor:pointer; 
+    margin-top: 250px; 
+    line-height: 30px; 
+    z-index: 100; 
+    /* margin-right: 20px; */ 
+    /* text-align: center; */ 
+} 
+.home,.place,.contact{ 
+    /* color: blue !important; 
+    font-size: 100px !important; */ 
+   display: block; 
+   cursor: pointer; 
+   font-size: 30px; 
+   /* height: 30px; 
+   width: 20px; */ 
+   margin-bottom:10px; 
+}
